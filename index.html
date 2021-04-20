@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -42,7 +42,8 @@
                         <button class="btn btn-primary btn-block" type="button" id="get_coordinates" onclick="geocodeLatLng();">Get your location</button>
                     </div>
                     <div class="col-lg-offset-2 col-lg-20">
-                        <button class="btn btn-primary btn-block" type="button">Get your distance to the nearest city</button>
+                        <button class="btn btn-primary btn-block" type="button" id="get_city" onclick="findCity();">Get your distance to the nearest city</button>
+                        <h4 id = "city"></h4>
                     </div>
                     <div class="col-lg-offset-2 col-lg-20">
                         <button class="btn btn-primary btn-block" type="button">Get your distance to the earth's center</button>
@@ -59,3 +60,4 @@
     <script src="main.js"></script>
 </body>
 </html>
+
