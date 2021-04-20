@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>PROJECT 3</title>
+    <!--===============================================================================================-->
+    <link href="content/bootstrap.min.css" rel="stylesheet" />
+    <!--===============================================================================================-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!--===============================================================================================-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!--===============================================================================================-->
+    <link href="main.css" rel="stylesheet" />
+    <!--===============================================================================================-->
+</head>
+
+<body>
+    <div class="jumbotron">
+        <div class="container-fluid">
+            <div id="google_map">
+            </div>
+            <div id="output">
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row center-block">
+                <div class="col-md-4 col-md-offset-4">
+                <form class="form-horizontal">
+                    <div class="row center-block">
+                        <div class="col-md-4 col-md-offset-4">
+                            <div class="form-group form-inline">
+                                <div class="col-xs-4">
+                                    <label for="latitude" class="col-xs-2 control-label">Latitude</label>
+                                    <input class="form-control" type="number" id="latitude" name="latitude" step="any" min="-90" max="90" placeholder="Enter the latitude">
+                                    <label for="longitude" class="col-xs-2 control-label">Longitude</label>
+                                    <input class="form-control" type="number" id="longitude" name="long" step="any" min="-180" max="180" placeholder="Enter the longitude">
+                                </div>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-offset-2 col-lg-20">
+                        <button class="btn btn-primary btn-block" type="button" id="get_coordinates" onclick="geocodeLatLng();">Get your location</button>
+                    </div>
+                    <div class="col-lg-offset-2 col-lg-20">
+                        <button class="btn btn-primary btn-block" type="button">Get your distance to the nearest city</button>
+                    </div>
+                    <div class="col-lg-offset-2 col-lg-20">
+                        <button class="btn btn-primary btn-block" type="button">Get your distance to the earth's center</button>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPTTWuEDBbqDfhHFI9olEiFyWHRBn4MfA&libraries=places"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="Scripts/jquery-3.1.1.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
